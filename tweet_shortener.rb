@@ -29,10 +29,10 @@ def bulk_tweet_shortener(tweet)
 end
 
 def selective_tweet_shortener(tweet)
-  tweet.collect do |shorten|
-    if shorten.length > 140
+  tweet.collect do |message|
+    if message.length > 140
       word_substituter(shorten)
-    else shorten
+    else message
     end
   end
 end
