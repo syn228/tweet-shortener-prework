@@ -15,12 +15,11 @@ end
 
 
 def word_substituter(tweet)
-  changed = []
   tweet.split(" ").each do |word|
     if dictionary.keys.include?(word.downcase)
-      changed << dictionary[word.downcase]
+      word = dictionary[word.downcase]
     else
-      changed << word
+      word
     end
   end
   changed.join(" ")
