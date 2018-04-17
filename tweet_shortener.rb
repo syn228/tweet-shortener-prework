@@ -27,3 +27,8 @@ def bulk_tweet_shortener(tweet)
     puts word_substituter(shortened)
   end
 end
+
+def selective_tweet_shortener(tweet)
+  tweet.collect do |shorten|
+    if 
+end
