@@ -1,5 +1,5 @@
 def dictionary
-  @substitutes = {
+  dictionary = {
     "hello" => "hi",
     "to" => "2",
     "two" => "2",
