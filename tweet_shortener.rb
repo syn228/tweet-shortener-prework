@@ -1,6 +1,5 @@
-
-def word_substituter(tweet)
-  dictionary = {
+def dictionary
+ substitutes = {
     "hello" => "hi",
     "to" => "2",
     "two" => "2",
@@ -10,7 +9,10 @@ def word_substituter(tweet)
     "at" => "@",
     "and" => "&"
 }
-  shortened = []
+end
+
+
+def word_substituter(tweet)
   tweet.split(",").each do |word|
     if word.include?("#{dictionary.keys}")
       shortened << "#{dictionary.values}"
