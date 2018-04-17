@@ -34,7 +34,7 @@ def selective_tweet_shortener(tweet)
     if message.length > 140
       word_substituter(message)
     elsif message.length =< 140
-    
+      message
     end
   end.join(" ")
 end
