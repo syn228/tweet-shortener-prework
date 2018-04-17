@@ -37,7 +37,7 @@ def selective_tweet_shortener(tweet)
     else
       message
     end
-  end
+  end.join(" ")
 end
 
 def shortened_tweet_truncator(tweet)
