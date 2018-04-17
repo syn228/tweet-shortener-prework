@@ -37,7 +37,7 @@ def selective_tweet_shortener(tweet)
     elsif message.length <= 140
       message
     end
-  end.join(" ")
+  end
 end
 
 def shortened_tweet_truncator(tweet)
