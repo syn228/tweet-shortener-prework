@@ -30,5 +30,7 @@ end
 
 def selective_tweet_shortener(tweet)
   tweet.collect do |shorten|
-    if 
+    if shorten.length > 140
+      word_substituter(shorten)
+    else shorten
 end
