@@ -19,7 +19,7 @@ def word_substituter(tweet)
   end
   shortened = shortened.join(" ")
   shortened
-    
+  dictionary.values
     
     #{|words| words == "#{@substitutes.keys}" ? "#{@substitutes.values}" : words} 
   #tweet.join(" ")
