@@ -12,7 +12,7 @@ def word_substituter(tweet)
 }
   shortened = []
   tweet.split(",").each do |word|
-    if word.include?(dictionary.keys)
+    if word.include?("#{dictionary.keys)
       shortened << dictionary.values
     else shortened << word
     end
